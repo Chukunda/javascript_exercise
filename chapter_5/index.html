@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Age Check</title>
+  </head>
+  <body>
+    <script>
+      // if age is => 13 allow in
+      // if someone is < 13 but accompanied by an adult allow in
+      // otherwise they can"t see the movie
+
+      let age = 12;
+      let allowedAge = 13;
+      let accompanied = true;
+
+      // to check for Allowed age
+      let firstCheck = age > allowedAge;
+      let secondCheck = allowedAge > age;
+      let thirdCheck = age < allowedAge && accompanied;
+      // Results
+      console.log(firstCheck + " Don't go in");
+      console.log(secondCheck + " Go in");
+      console.log(thirdCheck + " :" + "Allow in");
+    </script>
+  </body>
+</html>
