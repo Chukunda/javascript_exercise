@@ -17,10 +17,10 @@ let randomInsults = "Your " + randomBodyPart + " is more "
 alert(randomInsults);
 // using the .join() to concatenate
 let randomCurse = ['Your',randomBodyPart, 'is more ', randomAdjective, 'than a ', randomAnimal + '"s ', randomAnimalPart + '!!!'].join(" ")
-alert(randomCurse)
+alert(randomCurse);
 
 // the .join() method is very easy because it reduces the too many + signs in concatenation and makes the code appear more clever than the (+) method.
 
 // to return an num (3 is bigger than 2 is bigger than 1)
 let num = [3, 2,1]
-alert(num.join(" > ")
+alert(num.join(" > "))

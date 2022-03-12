@@ -9,19 +9,53 @@
   <body>
     <!--  -->
     <script>
-      let parentNames = {
-        dadName: "Joseph",
-        mumName: "Mary",
+      // challenge 1
+      //       #1: Scorekeeper
+      // Imagine you’re playing a game with some friends and you
+      // want to keep track of the score. Create an object called
+      // scores. The keys will be the names of your friends, and the
+      // values will be the scores (which will all start at 0). As the
+      // players earn points, you must increase their scores. How
+      // would you increase a player’s score in the scores object?
+
+      //solution
+      //create a score object and the keys will be the names of your friends and values will be the scores
+
+      let scores = {
+        Jane: 0,
+        Ben: 0,
+        hilary: 0,
+        James: 0,
       };
 
-      // try to change the name of the either of the parent to see a different result
-      let enterParentName = prompt("whats the name of my mum or dad?");
-      if (parentNames.dadName === "James" && "Joseph") alert("Hi Dad");
-      else{
-        alert("hello world")
-      }
-      // else if (parentNames.mumName === "Mary") alert("Hi Mum");
-      // else alert("Hi strangers");
+      alert(( scores.Jane += 1));
+      alert(( scores.hilary += 5));
+      alert((scores.James += 3.5));
+
+      // Challenge 2
+      //#2: Digging into Objects and Arrays
+      // Say you had the following object:
+      // var myCrazyObject = {
+      // "name": "A ridiculous object",
+      // "some array": [7, 9, { purpose: "confusion", number: 123 }, 3.3],
+      // "random animal": "Banana Shark"
+      // // };
+      // How would you get the number 123 out of this object
+      // using one line of JavaScript? Try it out in the console to see
+      // if you’re right.
+
+      // solution
+      var myCrazyObject = {
+        name: "A ridiculous object",
+        "some array": [7, 9, { purpose: "confusion", number: 123 }, 3.3],
+        "random animal": "Banana Shark",
+      };
+
+      // solution 1
+      myCrazyObject["some array"][2]["number"];
+      //solution 2
+      let num = myCrazyObject["some array"];
+      alert(num[2].number);
     </script>
   </body>
 </html>
